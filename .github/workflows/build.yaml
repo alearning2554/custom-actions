@@ -19,6 +19,8 @@ on:
           - 'minor'
           - 'patch'
         default: 'patch'
+permissions:
+  contents: write
 
 jobs:
   test:
