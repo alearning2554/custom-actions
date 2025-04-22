@@ -27,3 +27,4 @@ jobs:
       repopath: ${{ github.event.inputs.target_repopath }}
       appname: ${{ github.event.inputs.target_appname }}
       increment_type: ${{ github.event.inputs.version_increment }}
+      
