@@ -7,7 +7,7 @@ on:
         required: true
         default: "dockertest-docker"
       target_appname:
-        description: "Application name"
+        description: "Application name "
         required: true
         default: "test"
       version_increment:
