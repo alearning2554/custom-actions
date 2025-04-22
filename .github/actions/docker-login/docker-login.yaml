@@ -1,0 +1,19 @@
+name: 'docker login'
+description: 'docker login to jfrog artifactory'
+inputs:
+  jfrog_url:
+    description: "jfrog_url"
+    required: true
+  username:
+    description: "jfrog username"
+    required: true
+  password:
+    description: "jfrog password"
+    required: true
+runs:
+  using: 'composite'
+  steps:
+    - name: Docker login to Jfrod artifactory
+      shell: bash
+      run: |
+        docker login -u "${{ inputs.username }}" -p "${{ inputs.password }}" ${{ inputs.jfrog_url }}
